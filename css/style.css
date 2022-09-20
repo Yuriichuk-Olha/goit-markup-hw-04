@@ -92,7 +92,8 @@ ul {
 }
 
 .header-contact {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     
     padding-top: 32px;
     padding-bottom: 32px;
@@ -113,6 +114,7 @@ ul {
 }
 .svg {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .header-contact:hover,
@@ -145,6 +147,7 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
     /* outline: 2px solid tomato; */
 } 
 
@@ -219,7 +222,7 @@ ul {
 
 
 /* наші особливостві Чим ми займаємося */
-/* Постійні клієнти */
+
 
 
 .visually-hidden {
@@ -254,7 +257,7 @@ ul {
 }
 .icon-benefits {
     display: flex;
-   gap: 30px;
+    gap: 30px;
 }
 
 .icon-secon {
@@ -268,23 +271,30 @@ ul {
     align-items: center;
     
     background-color:var(--secondary-background-color);
-    background-size: 70px;
+    /* background-size: 70px; */
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.icon-secon:nth-child(1) {
-    background-image: url("../images/icon.svg/vector.svg");
+.icon-secon::after {
+    display: inline-block;
+    content: "";
+    
+    /* background-image: url("../images/sprite.icon.svg#icon-vector"); */
 }
 
-.icon-secon:nth-child(2) {
-    background-image: url("../images/icon.svg/clock.svg");
+
+.icon-secon:nth-child(1)::before {
+    background-image: url("../images/sprite.icon.svg#icon-vector");
 }
-.icon-secon:nth-child(3) {
-    background-image: url("../images/icon.svg/group.svg");
+
+.icon-secon:nth-child(2)::before {
+    background-image: url("../images/sprite.icon.svg#icon-clock");
 }
-.icon-seccon:nth-child(4) {
-    background-image: url("../images/icon.svg/astronaut.svg");
+.icon-secon:nth-child(3)::before {
+    background-image: url("../images/sprite.icon.svg#icon-group");
+}
+.icon-seccon:nth-child(4)::before {
+    background-image: url("../images/sprite.icon.svg#icon-astronaut");
 } 
 
 
@@ -366,8 +376,7 @@ img {
     align-items: center;
     justify-content: center;
     
-    /* background-color:var(--primary-white-color);
-    fill: #AFB1B8; */
+    
 }
 
 .icon-shape {
@@ -378,6 +387,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: currentColor;
+    fill:var(--accent-bg-color);
+    color: var(--primary-white-color);
       
     /* background-color:rgba(255, 255, 255, 0.1);
     fill:var(--primary-white-color);
@@ -412,26 +424,28 @@ img {
      position: absolute;
 }
 
-.icon-social:nth-child(1)::after {
-    background-image: url("../images/sprite.svg#icon-instagram");
+.icon-social:nth-child(1)::before {
+    background-image: url("../images/sprite.icon.svg#icon-instagram");
 }
-.icon-social:nth-child(2)::after {
-    background-image: url("../images/sprite.svg#icon-twitter");
+.icon-social:nth-child(2)::before {
+    background-image: url("../images/sprite.icon.svg#icon-twitter");
 }
-.icon-social:nth-child(3)::after {
-    background-image: url("../images/sprite.svg#icon-fasebook");
+.icon-social:nth-child(3)::before {
+    background-image: url("../images/sprite.icon.svg#icon-fasebook");
 }
-.icon-social:nth-child(4)::after {
-    background-image: url("../images/sprite.svg#icon-linkedin");
+.icon-social:nth-child(4)::before {
+    background-image: url("../images/sprite.icon.svg#icon-linkedin");
 }
 
+
+
 /* Постійні клієнти     */
-.sponsors {
+
+.clients {
     display: flex;
     gap:30px;
 }
-.icon-customers {
-    
+.icon-customers { 
     display: flex;
     width: 170px;
     height: 92px;
@@ -440,22 +454,17 @@ img {
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-  
+    fill: var(--accent-bg-color); 
 }  
+
 .icon-customers:hover,
 .icon-customers:focus {
-    border: 1px solid var(--accent-text-color);
-    fill: var(--accent-text-color);
-    color: var(--accent-text-color);
-   
+    border: 1px solid var(--accent-text-color); 
+    color: var(--accent-text-color);  
 }
 
-
-.link-customers:hover,
-.link-customers:focus {
-    fill:var(--accent-text-color);
-   
-    color:var(--accent-text-color);   
+.icon-customers:hover>svg {
+    fill: var(--accent-text-color);    
 }
 
 
