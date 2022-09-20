@@ -260,7 +260,7 @@ ul {
     gap: 30px;
 }
 
-.icon-secon {
+.icon-benefits {
     display: block;
     
     width: 270px;
@@ -271,31 +271,31 @@ ul {
     align-items: center;
     
     background-color:var(--secondary-background-color);
-    /* background-size: 70px; */
     background-repeat: no-repeat;
     background-position: center;
 }
-.icon-secon::after {
+.icon-benefits::before {
     display: inline-block;
     content: "";
     
     /* background-image: url("../images/sprite.icon.svg#icon-vector"); */
 }
+.icon-benefits {
+    fill: var(--accent-bg-color);
+}
 
-
-.icon-secon:nth-child(1)::before {
+/* .icon-benefits:nth-child(1)::before {
     background-image: url("../images/sprite.icon.svg#icon-vector");
 }
-
-.icon-secon:nth-child(2)::before {
+.icon-secon:nth-child(2) {
     background-image: url("../images/sprite.icon.svg#icon-clock");
 }
-.icon-secon:nth-child(3)::before {
+.icon-secon:nth-child(3) {
     background-image: url("../images/sprite.icon.svg#icon-group");
 }
-.icon-seccon:nth-child(4)::before {
+.icon-seccon:nth-child(4) {
     background-image: url("../images/sprite.icon.svg#icon-astronaut");
-} 
+}  */
 
 
 
@@ -421,7 +421,8 @@ img {
     
     justify-content: center;
     background: currentColor;
-     position: absolute;
+    position: absolute;
+   
 }
 
 .icon-social:nth-child(1)::before {
