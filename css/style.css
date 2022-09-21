@@ -371,15 +371,16 @@ img {
     color: var(--primary-white-color);    
 }
 
-.icon-shape {
-    
+/* .svg-inline {
+    fill: currentColor;
     fill:var(--accent-bg-color);
-}
+    color: var(--primary-white-color);
+} */
+
 .icon-shape:hover,
 .icon-shape:focus {
     background-color:var(--accent-text-color);
     fill:var(--primary-white-color);
-    color: var(--primary-white-color);
 }
 
 
@@ -415,7 +416,7 @@ img {
 
 .icon-customers:hover,
 .icon-customers:focus {
-    border: 1px solid var(--accent-text-color); 
+    border-color:var(--accent-text-color); 
     color: var(--accent-text-color);  
 }
 
@@ -499,9 +500,13 @@ img {
     justify-content: center;
     align-items: center;
     background-color:rgba(255, 255, 255, 0.1);
-    fill:var(--primary-white-color);    
+    /* fill:var(--primary-white-color);     */
 }
-
+.site {
+    fill:currentColor;
+    fill:var(--primary-white-color);
+    color:var(--primary-white-color);
+}
 
 .site-navigation:hover, 
 .site-navigation:focus {
@@ -518,10 +523,6 @@ img {
 .footer-site {
     display: flex;
     gap: 10px;    
-}
-.site {
-    fill:var(--primary-white-color);
-    color:var(--primary-white-color);
 }
 
 
@@ -554,7 +555,7 @@ img {
 .navigation-button {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     gap: 8px;
 }
 
