@@ -261,45 +261,24 @@ ul {
 }
 
 .icon-benefits {
-    display: block;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 270px;
     height: 120px;
    
     border-radius: 4px;
+    background-color:var(--secondary-background-color);
+   
+}
+.icon-list {
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color:var(--secondary-background-color);
-    background-repeat: no-repeat;
-    background-position: center;
+    fill: center;
 }
-.icon-benefits::before {
-    display: inline-block;
-    content: "";
-    
-    /* background-image: url("../images/sprite.icon.svg#icon-vector"); */
-}
-.icon-benefits {
-    fill: var(--accent-bg-color);
-}
-
-/* .icon-benefits:nth-child(1)::before {
-    background-image: url("../images/sprite.icon.svg#icon-vector");
-}
-.icon-secon:nth-child(2) {
-    background-image: url("../images/sprite.icon.svg#icon-clock");
-}
-.icon-secon:nth-child(3) {
-    background-image: url("../images/sprite.icon.svg#icon-group");
-}
-.icon-seccon:nth-child(4) {
-    background-image: url("../images/sprite.icon.svg#icon-astronaut");
-}  */
-
-
-
-
+ 
 .title-photo {
     display: flex;
 }
@@ -389,13 +368,7 @@ img {
     align-items: center;
     fill: currentColor;
     fill:var(--accent-bg-color);
-    color: var(--primary-white-color);
-      
-    /* background-color:rgba(255, 255, 255, 0.1);
-    fill:var(--primary-white-color);
-    fill: currentColor;
-    color: var(--primary-white-color); */
-    
+    color: var(--primary-white-color);    
 }
 
 .icon-shape {
@@ -408,11 +381,7 @@ img {
     fill:var(--primary-white-color);
     color: var(--primary-white-color);
 }
-/* .svg-inline:hover,
-.svg-inline:focus {
-    fill:var(--primary-white-color);
-    color:var(--primary-white-color);
-} */
+
 
 
 .icon-social::after {
@@ -424,20 +393,6 @@ img {
     position: absolute;
    
 }
-
-.icon-social:nth-child(1)::before {
-    background-image: url("../images/sprite.icon.svg#icon-instagram");
-}
-.icon-social:nth-child(2)::before {
-    background-image: url("../images/sprite.icon.svg#icon-twitter");
-}
-.icon-social:nth-child(3)::before {
-    background-image: url("../images/sprite.icon.svg#icon-fasebook");
-}
-.icon-social:nth-child(4)::before {
-    background-image: url("../images/sprite.icon.svg#icon-linkedin");
-}
-
 
 
 /* Постійні клієнти     */
