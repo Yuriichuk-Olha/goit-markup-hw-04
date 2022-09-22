@@ -313,9 +313,7 @@ img {
 
 .section-job {
     background-color: var(--secondary-background-color);
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 
@@ -428,8 +426,7 @@ img {
 
 /* footer */
 .footer {
-    max-width: 1600px;
-    margin: auto;
+   
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -617,8 +614,7 @@ img {
 .user-wrapper {
     padding:20px 24px;
    
-    border-radius: 0px 0px 4px 4px;
-    border:var(--secondary-border-color) 1px solid;
+    border:left right bottom var(--secondary-border-color) 1px solid;
    
 }
 .wrap-list {
